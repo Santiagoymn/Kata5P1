@@ -10,8 +10,8 @@ import java.sql.Statement;
 public class SelectApp {
     
     
-    private Connection connect() {
-        String url = "jdbc:sqlite:Prueba.db"; 
+    public Connection connect() {
+        String url = "jdbc:sqlite:mail.db"; 
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
